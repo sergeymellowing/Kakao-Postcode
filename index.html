@@ -48,11 +48,12 @@
             } else if (data.autoJibunAddress == "") {
               jibunAddress = data.jibunAddress;
             }
-
+            
             var postData = {
               roadAddress: data.roadAddress,
               jibunAddress: jibunAddress,
               zonecode: data.zonecode,
+              bname: data.bname
             };
             window.postMessageToiOS(postData);
           },
